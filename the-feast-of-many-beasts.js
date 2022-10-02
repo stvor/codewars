@@ -11,6 +11,16 @@ function feast(beast, dish) {
   return (beastFirstLetter == dishFirstLetter) && (beastLastLetter == dishLastLetter);
 }
 
+// Solution 2 (поддерживается ещё не во всех средах)
+function feast(beast, dish) {
+  let beastFirstLetter = beast[0];
+  let beastLastLetter = beast.at(-1);
+  let dishFirstLetter = dish[0];
+  let dishLastLetter = dish.at(-1);
+  
+  return (beastFirstLetter == dishFirstLetter) && (beastLastLetter == dishLastLetter);
+}
+
 // Tests
 console.log(feast("great blue heron", "garlic naan"), true)
 console.log(feast("chickadee", "chocolate cake"), true)
