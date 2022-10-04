@@ -10,6 +10,21 @@ function longest(s1, s2) {
   return sortedString;
 }
 
+// Solution 2
+function filterUniq(arr) {
+  return arr.filter((element, index) => {
+    return arr.indexOf(element) == index;
+  });
+}
+
+function longest(s1, s2) {
+  const chars = s1.concat(s2);
+  const uniqChars = filterUniq(Array.from(chars));
+  const sortedString = uniqChars.sort().join('');
+  
+  return sortedString;
+}
+
 // Tests
 console.log(longest("aretheyhere", "yestheyarehere"), "aehrsty");
 console.log(longest("loopingisfunbutdangerous", "lessdangerousthancoding"), "abcdefghilnoprstu");
