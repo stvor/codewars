@@ -24,5 +24,5 @@ function duplicateEncode(word){
 // Tests
 console.log(duplicateEncode("din"),"(((");
 console.log(duplicateEncode("recede"),"()()()");
-console.log(duplicateEncode("Success"),")())())","should ignore case");
+console.log(duplicateEncode("Success"),")())())");
 console.log(duplicateEncode("(( @"),"))((");

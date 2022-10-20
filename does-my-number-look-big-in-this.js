@@ -15,5 +15,5 @@ function narcissistic(value) {
 }
 
 // Tests
-console.log(narcissistic( 7 ), true, "7 is narcissistic" );
-console.log(narcissistic( 153 ), true, "153 is narcissistic" );
+console.log(narcissistic( 7 ), true);
+console.log(narcissistic( 153 ), true);
